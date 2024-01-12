@@ -3,31 +3,58 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: sandybrown;
 }
 
-.container {
-  text-align: center;
-}
-
 h1 {
-  color: crimson;
   text-align: center;
+  color: crimson;
 }
 
-button {
+.cat-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cat-image img {
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
   width: 120px;
   height: 70px;
   font-size: 24px;
-  border-radius: 5px;
   background-color: orange;
 }
 
+#BtnSi {
+  margin-right: 5px;
+}
+
+#BtnNo {
+  margin-left: 5px;
+}
+
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: center;
-  font-size: 24px;
   color: crimson;
+  text-align: center;
+  padding: 10px;
 }

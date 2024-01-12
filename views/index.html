@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>¿Me amas?</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/heart.ico" />
   </head>
   <body>
+    <header>
+      <h1>¿Me vas a amar para siempre, Valentina ♥?</h1>
+    </header>
     <main>
-      <div class="container">
-        <h1>¿Me vas a amar para siempre, Valentina ♥?</h1>
-        <div id="gatito">
-          <img src="images/gatito.jpeg" alt="Me amas?" />
-        </div>
+      <div class="cat-image">
+        <img
+          src="images/gatito.jpeg"
+          alt="Gatito tierno con ojos grandes y pelaje suave"
+        />
+      </div>
+      <div class="buttons">
         <button id="BtnSi" onclick="mostrarMje()">Si</button>
         <button id="BtnNo" onmouseover="moverBoton()">No</button>
-      </div>  
+      </div>
+      <script src="js/script.js"></script>
     </main>
     <footer>
-      <p class="footer-copyright">
-        Developed with ♥ by Ivan Alvarez
-      </p>
+      <p>Developed with ♥ by Ivan Alvarez</p>
     </footer>
-    <script src="js/app.js"></script>
   </body>
 </html>
