@@ -11,20 +11,16 @@ body {
 }
 
 h1 {
-  text-align: center;
   color: crimson;
 }
 
 .cat-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 10px;
 }
 
 .cat-image img {
   border-radius: 5px;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .buttons {
@@ -35,18 +31,18 @@ h1 {
 
 .buttons button {
   border-radius: 5px;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
   width: 120px;
   height: 70px;
   font-size: 24px;
   background-color: orange;
 }
 
-#BtnSi {
+#btnSi {
   margin-right: 5px;
 }
 
-#BtnNo {
+#btnNo {
   margin-left: 5px;
 }
 
@@ -57,4 +53,5 @@ footer {
   color: crimson;
   text-align: center;
   padding: 10px;
+  font-size: 20px;
 }

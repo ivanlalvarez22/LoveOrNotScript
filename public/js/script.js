@@ -1,5 +1,5 @@
-const btnNo = document.getElementById("BtnNo");
-const btnSi = document.getElementById("BtnSi");
+const btnSi = document.getElementById("btnSi");
+const btnNo = document.getElementById("btnNo");
 
 let vecesActivado = 0;
 
@@ -14,15 +14,15 @@ const resetearPosicionOriginal = () => {
 };
 
 const moverBoton = () => {
-  const windowWidth = window.innerWidth - btnNo.clientWidth;
-  const windowHeight = window.innerHeight - btnNo.clientHeight;
+  const anchoVentana = window.innerWidth - btnNo.clientWidth;
+  const altoVentana = window.innerHeight - btnNo.clientHeight;
 
-  const newX = Math.random() * windowWidth;
-  const newY = Math.random() * windowHeight;
+  const newX = Math.random() * anchoVentana;
+  const newY = Math.random() * altoVentana;
 
+  btnNo.style.position = "absolute";
   btnNo.style.left = newX + "px";
   btnNo.style.top = newY + "px";
-  btnNo.style.position = "absolute";
 
   vecesActivado++;
 
