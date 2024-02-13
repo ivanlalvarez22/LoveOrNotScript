@@ -43,3 +43,8 @@ $(document).ready(function () {
     }
   });
 });
+
+window.onload = () => {
+  const piano = document.getElementById("piano");
+  piano.play();
+};

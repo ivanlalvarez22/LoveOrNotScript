@@ -1,7 +1,7 @@
 const btnSi = document.getElementById("btnSi");
 const btnNo = document.getElementById("btnNo");
 const intentos = document.getElementById("intentos");
-const getGift = document.getElementById("getGift");
+const btnGift = document.getElementById("btnGift");
 let vecesActivado = 0;
 
 const mostrarMje = () => {
@@ -38,12 +38,12 @@ const moverBoton = () => {
 };
 
 const animarBoton = () => {
-  getGift.style.fontSize = "32px";
-  getGift.style.background = "linear-gradient(90deg, red, #ff9494)";
+  btnGift.style.fontSize = "32px";
+  btnGift.style.background = "linear-gradient(90deg, red, #ff9494)";
 
   setTimeout(() => {
-    getGift.style.fontSize = "26px";
-    getGift.style.background = "linear-gradient(90deg, #ff9494, red)";
+    btnGift.style.fontSize = "26px";
+    btnGift.style.background = "linear-gradient(90deg, #ff9494, red)";
   }, 1000);
 };
 
