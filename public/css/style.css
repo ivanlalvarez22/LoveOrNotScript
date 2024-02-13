@@ -3,40 +3,35 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: sandybrown;
+  text-align: center;
 }
 
 h1 {
   color: crimson;
-  text-align: center;
 }
 
 .cat-image {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.cat-image img {
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
+.cat-image img,
 .buttons button {
   border-radius: 5px;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttons button {
   width: 120px;
   height: 70px;
   font-size: 24px;
+  cursor: pointer;
   background-color: orange;
+}
+
+.buttons button:active {
+  background-color: orangered;
 }
 
 #btnSi {
@@ -47,12 +42,32 @@ h1 {
   margin-left: 5px;
 }
 
+.contadores {
+  margin-top: 10vh;
+}
+
+#intentos {
+  font-size: 32px;
+  color: red;
+}
+
+#getGift {
+  margin-top: 15vh;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 3px 5px 5px rgba(255, 0, 0, 0.5);
+  color: white;
+  font-size: 26px;
+  background: linear-gradient(90deg, #ff9494, red);
+  cursor: pointer;
+}
+
 footer {
   position: fixed;
-  bottom: 0;
   width: 100%;
+  bottom: 0;
   color: crimson;
-  text-align: center;
+  background-color: black;
+  font-size: 18px;
   padding: 10px;
-  font-size: 20px;
 }
