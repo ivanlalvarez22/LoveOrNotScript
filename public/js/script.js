@@ -2,6 +2,7 @@ const btnSi = document.getElementById("btnSi");
 const btnNo = document.getElementById("btnNo");
 const intentos = document.getElementById("intentos");
 const btnGift = document.getElementById("btnGift");
+const btnML = document.getElementById("btnML");
 let vecesActivado = 0;
 
 const mostrarMje = () => {
@@ -45,6 +46,10 @@ const animarBoton = () => {
     btnGift.style.fontSize = "26px";
     btnGift.style.background = "linear-gradient(90deg, #ff9494, red)";
   }, 1000);
+};
+
+const cambiarPagina = () => {
+  window.open("http://www.mercadolibre.com.ar", "blank");
 };
 
 setInterval(animarBoton, 2000);

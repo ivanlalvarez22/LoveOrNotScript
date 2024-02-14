@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Sacramento");
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Sacramento", cursive;
+  background-color: sandybrown;
+  overflow: hidden;
+}
+
 #card {
   height: 500px;
   width: 800px;
@@ -38,16 +48,6 @@
 .side.two {
   transform: skew(10deg, -15deg);
   background: linear-gradient(-90deg, #fff, #fff 40%, #f0f0f0);
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: "Sacramento", cursive;
-  background-color: sandybrown;
-  overflow: hidden;
 }
 
 .valentines-day {
@@ -177,6 +177,28 @@ body {
   text-decoration: none;
 }
 
+.scroll-btn {
+  position: fixed;
+  right: 20px; /* Ajusta la distancia desde el borde derecho de la ventana */
+  z-index: 999; /* Asegura que el botón esté sobre otros elementos */
+  padding: 10px 20px;
+  background-color: orangered; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Transición suave para el cambio de opacidad y color de fondo */
+  opacity: 0.8; /* Opacidad inicial */
+}
+
+#scroll-up-btn {
+  bottom: 70px; /* Ajusta la distancia desde la parte inferior de la ventana */
+}
+
+#scroll-down-btn {
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior de la ventana */
+}
+
 @media only screen and (max-width: 600px) {
   body {
     font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
@@ -191,7 +213,7 @@ body {
   }
 
   .side {
-    height: 50vh;
+    height: auto;
   }
 
   #card h2 {
